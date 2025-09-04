@@ -69,10 +69,10 @@
 
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+  /* Instead of @apply, write out the styles directly */
+
+body {
+  background-color: #f9fafb; /* Example for bg-background */
+  color: #111827;            /* Example for text-foreground */
+}
 }
