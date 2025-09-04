@@ -82,23 +82,20 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section
-        className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{
-          backgroundImage: `url('/header.jpg')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance">Welcome to Kyra Works</h1>
-          <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner in business growth and marketing excellence
-          </p>
-        </div>
-        <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <ChevronDown className="h-8 w-8" />
-        </button>
-      </section>
+<section className="relative h-screen flex items-center justify-center">
+  <img src="/header.jpg" alt="Hero Image" className="absolute inset-0 object-cover w-full h-full" />
+  <div className="absolute inset-0 bg-black/60"></div>
+  <div className="relative z-10 text-center text-white px-4">
+    <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance">Welcome to Kyra Works</h1>
+    <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed">
+      Your trusted partner in business growth and marketing excellence
+    </p>
+  </div>
+  <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+    <ChevronDown className="h-8 w-8" />
+  </button>
+</section>
+
 
       {/* Introduction Section */}
       <section className="py-20 bg-white">
